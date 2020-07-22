@@ -1,0 +1,7 @@
+{
+  "name": "mosqueeFront",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
