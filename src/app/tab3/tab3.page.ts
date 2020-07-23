@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
+import {IonNav} from '@ionic/angular';
 
 @Component({
   selector: 'app-tab3',
@@ -6,7 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-
+  title = 'Chercher';
+  @ViewChild(IonNav, {static: true}) nav: IonNav;
   constructor() {}
 
 }

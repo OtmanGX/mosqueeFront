@@ -1,17 +1,48 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      {{title}}
     </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar placeholder="Chercher" animated showCancelButton="focus"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<!--  <ion-header collapse="condense">-->
+<!--    <ion-toolbar>-->
+<!--      <ion-title size="large">Tab 3</ion-title>-->
+<!--    </ion-toolbar>-->
+<!--    <ion-toolbar>-->
+<!--      <ion-searchbar animated></ion-searchbar>-->
+<!--    </ion-toolbar>-->
+<!--  </ion-header>-->
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <!-- Searchbar with cancel button shown on focus -->
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Ville</ion-label>
+      <ion-select value="f" placeholder="Selectionner" okText="Choisis" cancelText="Annuler">
+        <ion-select-option value="f">Tanger</ion-select-option>
+        <ion-select-option value="m">Tétouan</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Quartier</ion-label>
+      <ion-select value="brown" okText="Choisis" cancelText="Annuler">
+        <ion-select-option value="brown">Bni Makada</ion-select-option>
+        <ion-select-option value="blonde">Malabata</ion-select-option>
+        <ion-select-option value="black">Tanja Balia</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-nav>
+
+  </ion-nav>
+
 </ion-content>

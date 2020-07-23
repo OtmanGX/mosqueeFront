@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">mosqueeFront</string>
+    <string name="title_activity_main">mosqueeFront</string>
+    <string name="package_name">io.ionic.mosquee</string>
+    <string name="custom_url_scheme">io.ionic.mosquee</string>
+</resources>
